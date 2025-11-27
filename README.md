@@ -37,13 +37,10 @@ The idea can expand into a university-wide Finnish assistance tool for integrati
 - Clean vanilla HTML + JS frontend
 - Flask backend with Gemini API
 
----
-
 ## How to run the project
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/IrumShehryar/Finnish-mentor.git
 cd Finnish-mentor
 
@@ -54,14 +51,13 @@ Windows:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-
 macOS/Linux:
 
 python3 -m venv .venv
 source .venv/bin/activate
 
 3. Install dependencies
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Add your Gemini API key
 
@@ -69,30 +65,30 @@ Create a .env file:
 
 GEMINI_API_KEY=your_api_key_here
 
-
 (The .env.example file shows the structure.)
 
 5. Run the app
-python app.py
-
+   python app.py
 
 Open:
 
 http://127.0.0.1:5000
-
 
 The app will load in your browser.
 
 ## Screenshots
 
 ### Main interface
+
 ![Main UI](static/screenshots/main.png)
 
 ### Feedback example
+
 ![Feedback](static/screenshots/feedback1.png)
 ![Feedback](static/screenshots/feedback2.png)
 
 ### Pronunciation page
+
 ![Pronunciation](static/screenshots/pronunciation.png)
 
 To use this, create the folder:
@@ -111,6 +107,7 @@ Finnish-mentor/
 ├─ style.css
 ├─ spoken-finnish.js
 └─ screenshots
+
 ```
 
 ## Technologies used
@@ -151,3 +148,4 @@ I'm happy to explain design choices, prompt logic, or code during the interview.
 - Support for other languages (Arabic, Urdu, Somali, Mandarin)
 - Integration into OMA or Moodle
 - Fully responsive mobile UI
+```
