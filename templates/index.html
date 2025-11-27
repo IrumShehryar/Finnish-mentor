@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Finnish Mentor – Beginner Sentence Helper</title>
+
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <!-- Main JS -->
+    <script
+      src="{{ url_for('static', filename='spoken-finnish.js') }}"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1>Finnish Mentor</h1>
+        <p class="subtitle">
+          Prototype for beginner Finnish learners (immigrant focus)
+        </p>
+      </header>
+
+      <main class="layout">
+        <!-- LEFT PANEL: explanation and examples -->
+        <section class="left-panel">
+          <h2>How this mentor helps you</h2>
+          <p>
+            Write a simple Finnish or English sentence (even if it has mistakes)
+            and click
+            <strong>“Get feedback”</strong>.The mentor will:
+          </p>
+
+          <ul class="mini-checklist">
+            <li>✅ Correct your sentence</li>
+            <li>✅ Show the English translation</li>
+            <li>✅ Explain key grammar in simple English</li>
+            <li>✅ Show the verb in all forms (minä, sinä, hän, me, te, he)</li>
+            <li>✅ Give example sentences</li>
+            <li>✅ Give pronunciation hints and audio</li>
+          </ul>
+
+          <h3>Example sentences you can try</h3>
+          <ul class="example-list">
+            <li><code>minä haluta vesi</code> – “I want water”</li>
+            <li>
+              <code>me mennä koulu huomenna</code> – “We go to school tomorrow”
+            </li>
+            <li>
+              <code>te puhua suomi vähän</code> – “You (plural) speak Finnish a
+              little”
+            </li>
+          </ul>
+
+          <p class="hint-text">
+            These are beginner-style sentences with mistakes. Type something
+            similar on the right side and see how the mentor corrects it and
+            shows the verb forms.
+          </p>
+        </section>
+
+        <!-- RIGHT PANEL: input and AI feedback -->
+        <section class="right-panel">
+          <div class="card">
+            <h2>Try your own sentence</h2>
+
+            <label for="sentence" class="field-label"
+              >Your Finnish sentence</label
+            >
+            <textarea
+              id="sentence"
+              rows="3"
+              class="sentence-input"
+              placeholder="Write a simple sentence in Finnish/English, for example: minä haluta vesi"
+            ></textarea>
+
+            <div class="button-row">
+              <button id="feedback-btn" class="primary-btn">
+                Get feedback
+              </button>
+              <button id="pronounce-btn" class="secondary-btn">
+                🎙️ Speak &amp; check pronunciation
+              </button>
+
+              <button id="reset-btn" class="secondary-btn">Reset</button>
+            </div>
+
+            <p id="speech-status" class="status-text"></p>
+          </div>
+
+          <div class="card">
+            <h2>Feedback</h2>
+            <div id="feedback-area">
+              <p>No feedback yet. Write a sentence and click the button.</p>
+            </div>
+          </div>
+
+          <div class="card pronunciation-card">
+            <h2>Pronunciation feedback</h2>
+            <div id="pronunciation-feedback">
+              <p>No pronunciation check yet.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
