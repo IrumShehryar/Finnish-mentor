@@ -91,8 +91,6 @@ The app will load in your browser.
 
 ![Pronunciation](static/screenshots/pronunciation.png)
 
-To use this, create the folder:
-
 ## Project structure
 
 Finnish-mentor/
