@@ -91,6 +91,7 @@ The app will load in your browser.
 
 ![Pronunciation](static/screenshots/pronunciation.png)
 
+```
 ## Project structure
 
 Finnish-mentor/
@@ -146,4 +147,7 @@ I'm happy to explain design choices, prompt logic, or code during the interview.
 - Support for other languages (Arabic, Urdu, Somali, Mandarin)
 - Integration into OMA or Moodle
 - Fully responsive mobile UI
+
+```
+
 ```
