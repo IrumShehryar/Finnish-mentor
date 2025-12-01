@@ -144,7 +144,7 @@ I'm happy to explain design choices, prompt logic, or code during the interview.
 - Save student progress and history
 - Personalised vocabulary practice
 - UI for teachers to see common mistakes
-- Support for other languages (Arabic, Urdu, Somali, Mandarin)
+- Support for other languages 
 - Integration into OMA or Moodle
 - Fully responsive mobile UI
 
